@@ -29,7 +29,7 @@
                 echo "Successful Connection<br>";
             }
 
-            $sql = "CREATE TABLE `login`(`name` VARCHAR(30) NOT NULL, `username` VARCHAR(10) NOT NULL, `password` VARCHAR(20) NOT NULL, PRIMARY KEY(`username`))";
+            $sql = "CREATE TABLE `login`(`name` VARCHAR(30) NOT NULL, `username` VARCHAR(30) NOT NULL, `password` VARCHAR(20) NOT NULL, PRIMARY KEY(`username`))";
             $result = mysqli_query($conn, $sql);
 
             if ($result){
